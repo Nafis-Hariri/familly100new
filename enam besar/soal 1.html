@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Style2.css">
+  <link rel="shortcut icon" href="/images/20250321_210044.png" type="image/x-icon">
+
+</head>
+
+<body class="bgimage">
+  <nav class="navbar fixed-top border-bottom">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <h1>FAMILY 100</h1>
+      </div>
+      <div class="d-flex justify-content-between">
+        <h1>SEMIFINAL</h1>
+      </div>
+      <div class=" d-flex justify-content-between">
+        <h1> Survey 1</h1>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <div class="container text-center" id="containersoal">
+      <div class="row">
+        <div class="col-12">
+          <h2>Apa ciri khas ketika buka bersama?</h2>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class="border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center " id="survey1a">
+            PLANING BUKBER LAGI
+            <span class="badge text-bg-primary rounded-pill ">75</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey1b">
+            1
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8 ">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey2a">
+            MABAR
+            <span class="badge text-bg-primary rounded-pill">60</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey2b">
+            2
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey3a">
+            GAK SHOLAT MAGHRIB
+            <span class="badge text-bg-primary rounded-pill">50</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey3b">
+            3
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey4a">
+            ARISAN
+            <span class="badge text-bg-primary rounded-pill">45</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey4b">
+            4
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey5a">
+            REUNI
+            <span class="badge text-bg-primary rounded-pill">35</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey5b">
+            5
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey6a">
+            VELOCITY AN
+            <span class="badge text-bg-primary rounded-pill">25</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey6b">
+            6
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey7a">
+            SELFIE
+            <span class="badge text-bg-primary rounded-pill">15</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey7b">
+            7
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h4 class=" border border-success bg-success-subtle text-success rounded-2 scale-up-hor-center" id="survey8a">
+            DATENG TELAT
+            <span class="badge text-bg-primary rounded-pill">8</span>
+          </h4>
+          <h4 class="border border-secondary rounded-2 text-center" id="survey8b">
+            8
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="containerinput">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Masukkan Tebakan" aria-label="Recipient's username"
+              aria-describedby="button-addon2" id="inputsurvey">
+            <button class="btn btn-outline-success" type="submit" id="button-addon2" onclick="survey()">Button</button>
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2 d-flex justify-content-center align-items-center border border-success border-2 rounded"
+          id="poin">0</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8" id="containersalah">
+          <h3 class=" border border-danger bg-danger-subtle text-danger text-center scale-up-hor-center rounded-2"
+            id="salah">JAWABAN SALAH
+            <img src="images/close.png" alt="" class="close" id="tutup" onclick="ilang()">
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+  <script>
+    let survey1a = document.getElementById('survey1a')
+    let survey2a = document.getElementById('survey2a')
+    let survey3a = document.getElementById('survey3a')
+    let survey4a = document.getElementById('survey4a')
+    let survey5a = document.getElementById('survey5a')
+    let survey6a = document.getElementById('survey6a')
+    let survey7a = document.getElementById('survey7a')
+    let survey8a = document.getElementById('survey8a')
+    let survey1b = document.getElementById('survey1b')
+    let survey2b = document.getElementById('survey2b')
+    let survey3b = document.getElementById('survey3b')
+    let survey4b = document.getElementById('survey4b')
+    let survey5b = document.getElementById('survey5b')
+    let survey6b = document.getElementById('survey6b')
+    let survey7b = document.getElementById('survey7b')
+    let survey8b = document.getElementById('survey8b')
+    let inputsurveyB = document.getElementById('inputsurvey')
+    let poin = document.getElementById('poin')
+    let salah = document.getElementById('salah')
+    let tutup = document.getElementById('tutup')
+    i = e = b = c = d = f = g = h = 0
+    survey1a.style.display = "none"
+    survey2a.style.display = "none"
+    survey3a.style.display = "none"
+    survey4a.style.display = "none"
+    survey5a.style.display = "none"
+    survey6a.style.display = "none"
+    survey7a.style.display = "none"
+    survey8a.style.display = "none"
+    salah.style.display = "none"
+    nilaiAwal = poin.innerHTML
+    a = +(nilaiAwal)
+    function tambah(a, b) {
+      return a + b
+    }
+    function playwrong() {
+      var audio = new Audio('audio/wrong.mp3');
+      audio.play();
+    }
+    function playcorrect() {
+      var audio = new Audio('audio/correct.mp3');
+      audio.play();
+    }
+    function survey() {
+      inputsurveyA = inputsurvey.value.toUpperCase()
+      if (inputsurveyA == "PLANING BUKBER LAGI" && i == 0) {
+        playcorrect()
+        i++
+        survey1a.style.display = "block"
+        survey1b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 75)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      } else if (inputsurveyA == "MABAR" && e == 0) {
+        playcorrect()
+        e++
+        survey2a.style.display = "block"
+        survey2b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 60)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      } else if (inputsurveyA == "GAK SHOLAT MAGHRIB" && b == 0) {
+        playcorrect()
+        b++
+        survey3a.style.display = "block"
+        survey3b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 50)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      } else if (inputsurveyA == "ARISAN" && c == 0) {
+        playcorrect()
+        c++
+        survey4a.style.display = "block"
+        survey4b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 45)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      } else if (inputsurveyA == "REUNI" && d == 0) {
+        playcorrect()
+        d++
+        survey5a.style.display = "block"
+        survey5b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 35)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      }
+      else if (inputsurveyA == "VELOCITY AN" && f == 0) {
+        playcorrect()
+        f++
+        survey6a.style.display = "block"
+        survey6b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 25)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      }
+      else if (inputsurveyA == "SELFIE" && g == 0) {
+        playcorrect()
+        g++
+        survey7a.style.display = "block"
+        survey7b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 15)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      }
+      else if (inputsurveyA == "DATENG TELAT" && h == 0) {
+        playcorrect()
+        h++
+        survey8a.style.display = "block"
+        survey8b.style.display = "none"
+        salah.style.display = "none"
+        poinAkhir = tambah(a, 8)
+        poin.innerHTML = poinAkhir
+        return a = poinAkhir
+      }
+
+      else {
+        salah.style.display = "block"
+        playwrong()
+      }
+    }
+    function ilang() {
+      salah.style.display = "none"
+    } 
+  </script>
+</body>
+
+</html>
