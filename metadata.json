@@ -1,0 +1,8 @@
+{
+  "name": "Family 100",
+  "description": "Interactive Family 100 quiz survey game.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

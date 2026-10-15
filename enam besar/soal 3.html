@@ -15,7 +15,7 @@
   <nav class="navbar fixed-top border-bottom">
     <div class="container-fluid">
       <div class="d-flex justify-content-between">
-        <h1>FAMILY 100</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;"><h1>FAMILY 100</h1></a>
       </div>
       <div class="d-flex justify-content-between">
         <h1>SEMIFINAL</h1>
@@ -197,7 +197,6 @@
     survey6a.style.display = "none"
     survey7a.style.display = "none"
     survey8a.style.display = "none"
-    survey9a.style.display = "none"
     salah.style.display = "none"
     nilaiAwal = poin.innerHTML
     a = +(nilaiAwal)
@@ -206,14 +205,23 @@
     }
     function playwrong() {
       var audio = new Audio('audio/wrong.mp3');
-      audio.play();
+      audio.play().catch(function(err) { console.warn(err); });
     }
     function playcorrect() {
       var audio = new Audio('audio/correct.mp3');
-      audio.play();
+      audio.play().catch(function(err) { console.warn(err); });
+    }
+    if (inputsurveyB) {
+      inputsurveyB.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+          event.preventDefault();
+          survey();
+        }
+      });
     }
     function survey() {
-      inputsurveyA = inputsurvey.value.toUpperCase()
+      let inp = document.getElementById('inputsurvey') || inputsurveyB;
+      inputsurveyA = (inp ? inp.value : '').trim().toUpperCase()
       if (inputsurveyA == "MENUNDUKKAN PANDANGAN" && i == 0) {
         playcorrect()
         i++

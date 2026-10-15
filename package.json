@@ -1,0 +1,14 @@
+{
+  "name": "family-100",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Interactive Family 100 quiz survey game.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Build successful'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
